@@ -1,0 +1,265 @@
+<!-- 首页 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/animation.css">
+</head>
+<body>
+    <div id="container">
+    <div id="wrap">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">RESUME</a>
+                </div>
+                <div class="collapse navbar-collapse fr" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li id="home-btn"onclick="slidePage(0)"><a href="#">Home</a></li>
+                        <li id="PageOne-btn"  onclick="slidePage(1)"><a href="#">PageOne</a></li>
+                        <li id="PageTwo-btn" onclick="slidePage(2)"><a href="#">PageTwo</a></li>
+                        <li id="PageThree-btn" onclick="slidePage(3)"><a href="#">PageThree</a></li>
+                        <li  onclick="slidePage(4)"><a href="#">PageFour</a></li>
+                        <li  onclick="slidePage(5)"><a href="#">PageFive</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="home" class="cover">
+            <div id="des-content" class="col-xs-12 col-sm-6">
+                 <div class="poto">
+                    <img src="../img/poto1.jpg" alt="" width="20%" height="20%">
+                </div>
+                <div id="text-wrap">
+                    <p class="motto ellipsis">世上只有想不通的人，没有走不通的路。</p>
+                    <div class="intro">
+                        <p>陶芮</p>
+                        <p>web前端工程师</p>
+                        <p>2018应届毕业生</p>
+                        <p>15063335087</p>
+                        <p>15063335087@163.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="down-wrap" id="down-page1">
+                <i class="down-icon"></i>
+            </div>
+        </section>
+        <section id="page-one" class="cover">
+        	<div id="pageOne-wrap">
+                <div id="title-wrap">
+                    <h1>关于我这只小仙女</h1> 
+                    <div class="line"></div>
+                    <p>居然说我写bug，你才在写bug呢！哼！<(￣ ﹌ ￣)></p>
+                </div>
+                <div class="clearfix intro-wrap">
+                    <div class="col-xs-6 col-sm-3" id="poto-wrap">
+                        <img src="../img/poto1.jpg" width="50%" height="50%">
+                    </div>
+                    <ul class="col-xs-12 col-sm-3" id="left-text">
+                        <li>姓名 | 陶芮</li>
+                        <li>性别 | 女</li>
+                        <li>出生 | 1996.06.14</li>
+                        <li>学校 | 山东财经大学</li>
+                        <li>学历 | 本科</li>
+                        <li>学院 | 计算机科学与技术</li>
+                        <li>专业 | 数字媒体技术</li>
+                    </ul>
+                    <ul class="col-xs-12 col-sm-3" id="right-text">
+                        <li>手机 | 15063335087</li>
+                        <li>邮箱 | 15063335087@163.com</li>
+                        <li>QQ&nbsp | 792209917</li>
+                        <li>户籍 | 重庆</li>
+                        <li>英语 | 四、六级</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="down-wrap" id="down-page2">
+                <i class="down-icon"></i>
+            </div>
+        </section>
+        <section id="page-two" class="cover">
+        	<div id="pageTwo-wrap">
+                <div id="title-wrap">
+                    <h1>项目经验</h1> 
+                    <div class="line"></div>
+                    <p>你没看到我在写这个世间最美丽的语言吗？(*/ω＼*)</p>
+                </div>
+
+                <div class="clearfix intro-wrap">
+                    <div></div>
+                    <ul>
+                        <li class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" 
+                                           href="#collapseOne">
+                                            重庆玖舆博泓科技有限公司当实习生  
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+负责部分前端页面的编写1.使用Element-UI实现 2.使用less语言，并重写控件样式
+   负责前端页面地图弹框数据的绑定，axios请求后台数据
+   负责颜色配置页面和故障规则配置页面全部功能的实现和数据绑定
+1.  完成页面实现，less和Element-UI 2.axios请求数据
+3.Vue.js实现功能
+   完成KPI报表展示，数据绑定，报表导出等功能
+   实习期间共独立完成9个页面展现和功能的实现
+   此次实习，使我熟悉git版本管理，提高自己如何思考，如何解决问题的能力
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                         <li class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" 
+                                           href="#collapseTwo">
+                                            重庆玖舆博泓科技有限公司当实习生  
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+负责部分前端页面的编写1.使用Element-UI实现 2.使用less语言，并重写控件样式
+   负责前端页面地图弹框数据的绑定，axios请求后台数据
+   负责颜色配置页面和故障规则配置页面全部功能的实现和数据绑定
+1.  完成页面实现，less和Element-UI 2.axios请求数据
+3.Vue.js实现功能
+   完成KPI报表展示，数据绑定，报表导出等功能
+   实习期间共独立完成9个页面展现和功能的实现
+   此次实习，使我熟悉git版本管理，提高自己如何思考，如何解决问题的能力
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                         <li class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" 
+                                           href="#collapseThree">
+                                            重庆玖舆博泓科技有限公司当实习生  
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+负责部分前端页面的编写1.使用Element-UI实现 2.使用less语言，并重写控件样式
+   负责前端页面地图弹框数据的绑定，axios请求后台数据
+   负责颜色配置页面和故障规则配置页面全部功能的实现和数据绑定
+1.  完成页面实现，less和Element-UI 2.axios请求数据
+3.Vue.js实现功能
+   完成KPI报表展示，数据绑定，报表导出等功能
+   实习期间共独立完成9个页面展现和功能的实现
+   此次实习，使我熟悉git版本管理，提高自己如何思考，如何解决问题的能力
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="down-wrap" id="down-page2">
+                <i class="down-icon"></i>
+            </div>
+        </section>
+        <section id="page-three" class="cover">
+        	<div id="pageThree-wrap">
+                <div id="title-wrap">
+                    <h1>自身技能</h1> 
+                    <div class="line"></div>
+                    <p>你没看到我在写这个世间最美丽的语言吗？(*/ω＼*)</p>
+                </div>
+                <div id="content-wrap">
+                    <div id="circle-wrap" class="fl">
+                       <ul>
+                           <li>
+                               <canvas id="h5-circle" width="120" height="120">
+                                   该浏览器不支持canvas标签
+                               </canvas>
+                           </li>
+                           <li>
+                               <canvas id="css3-circle" width="120" height="120"></canvas>
+                           </li>
+                           <li>
+                               <canvas id="js-circle" width="120" height="120">
+                               </canvas>
+                           </li>
+                       </ul>
+                        <ul>
+                           <li>
+                               <canvas id="jquery-circel" width="120" height="120"></canvas>
+                           </li>
+                            <li>
+                               <canvas id="less-circle" width="120" height="120"></canvas>
+                           </li>
+                            <li>
+                               <canvas id="bootstrap-circle" width="120" height="120"></canvas>
+                           </li>
+                       </ul>
+                        <ul>
+                           <li>
+                               <canvas id="vue-circle" width="120" height="120"></canvas>
+                           </li>
+                            <li>
+                               <canvas id="webpack-circle" width="120" height="120"></canvas>
+                           </li>
+                            <li>
+                               <canvas id="ps-circle" width="120" height="120"></canvas>
+                           </li>
+                       </ul>
+                     
+                    </div>
+                    <ul id="skill-text" class="fr">
+                        <li>1. 熟练HTML5，CSS3，JavaScript技术，开发符合W3C标准的前端网页。</li>
+                        <li>2.熟练使用jQuery，bootstrap等前端框架技术。</li>
+                        <li>3.熟悉sass工具，扩展css功能,提高css功能和效率</li>
+                        <li>4.熟悉Ajax的运行机制，能使用ajax进行数据交互。</li>
+                        <li>5.熟练使用PS，墨刀等工具，能快速切图和搭建原型图。</li>
+                        <li>6.熟悉W3C标准，对表现与数据分离、Web语义化等有较为深刻的理解。</li>
+                        <li>7.精通流体布局和弹性布局，能适应各种分辨率。</li>
+                        <li>8.熟悉各种主流浏览器的差异性，有解决主流浏览器的兼容性问题的经验。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="down-wrap" id="down-page3">
+                <i class="down-icon"></i>
+            </div>
+        </section>
+        <section id="page-four">
+        	
+        </section>
+        <section id="page-five">
+        	
+        </section>
+    </div>
+    </div>
+</body>
+<script src="../js/index.js"></script>
+<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/resume.js"></script>
+</html>
