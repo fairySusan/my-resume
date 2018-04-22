@@ -135,17 +135,25 @@ $(document).ready(function(){
 	function toPage(now){
 		$('#wrap').animate({top:(now+'px')},1000);
 		if (now == 0) {
-			indexAnimation = document.querySelector('#home');
+			var indexAnimation = document.querySelector('#home');
 			setTimeout(function(){
 				playAnimation(indexAnimation,'index-animation');
 			},200)
-			
+			playAnimation(title,'rubberBand');
 		}
 		if (now == -h) {
-			introWrap = document.querySelector('.intro-wrap');
+			var introWrap = document.querySelector('.intro-wrap');
 			playAnimation(introWrap,'rotate');
+			var about = document.querySelector('#about');
+			playAnimation(about,'rubberBand');
+		}
+		if (now == -2*h) {
+			var exprience = document.querySelector('#exprience');
+			playAnimation(exprience,'rubberBand');
 		}
 		if(now == -3*h){
+			var selfSkill = document.querySelector('#self-skill');
+			playAnimation(selfSkill,'rubberBand');
 			setTimeout(function(){
 				getCanvasId();
 			},500);

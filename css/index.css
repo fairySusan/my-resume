@@ -198,7 +198,6 @@ nav.navbar-default{
 
 #des-content>.poto>img{
 	border-radius: 50%;
-    /*animation: poto-animation 1s ease;*/
 }
 #text-wrap{
 	margin-top: 50px;
@@ -209,6 +208,8 @@ nav.navbar-default{
 	border-radius: 3px;
 }
 #text-wrap>.motto{
+    -webkit-animation: fadeInDown 1s;
+    animation: fadeInDown 1s;
 	font-size: 1.5rem;
 }
 #text-wrap>.intro>p{
@@ -239,6 +240,9 @@ nav.navbar-default{
 }
 #title-wrap>h1{
     
+}
+.rubberBand{
+    animation: rubberBand 1s;
 }
 #title-wrap>.line{
     width: 80%;
