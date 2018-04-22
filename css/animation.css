@@ -1,30 +1,58 @@
 @keyframes index-animation{
 	0%{
+		-ms-transform:scale(2,2);
+		-webkit-transform:scale(2,2);
 		transform: scale(2,2);
 	}
 	100%{
+		-ms-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		transform: scale(1,1);
+	}
+}
+@-webkit-keyframes index-animation{
+	0%{
+		-ms-transform:scale(2,2);
+		-webkit-transform:scale(2,2);
+		transform: scale(2,2);
+	}
+	100%{
+		-ms-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
 		transform: scale(1,1);
 	}
 }
 @keyframes jump-animation{
 	0%{
+		-ms-transform:translate(-50%,0);
+		-webkit-transform:translate(-50%,0);
 		transform: translate(-50%,0);
 	}
 	50%{
+		-ms-transform:translate(-50%,10px);
+		-webkit-transform:translate(-50%,10px);
 		transform: translate(-50%,10px)
 	}
 	100%{
+		-ms-transform:translate(-50%,0px);
+		-webkit-transform:translate(-50%,0px);
 		transform: translate(-50%,0px);
 	}
 }
 @-webkit-keyframes jump-animation{
 	0%{
+		-ms-transform:translate(-50%,0);
+		-webkit-transform:translate(-50%,0);
 		transform: translate(-50%,0);
 	}
 	50%{
+		-ms-transform:translate(-50%,10px);
+		-webkit-transform:translate(-50%,10px);
 		transform: translate(-50%,10px)
 	}
 	100%{
+		-ms-transform:translate(-50%,0px);
+		-webkit-transform:translate(-50%,0px);
 		transform: translate(-50%,0px);
 	}
 }
@@ -93,17 +121,6 @@
 		width: 80%;
 	}
 }
-/*@keyframes enter-animation{
-	0%{
-		transform: translate(0,100%);
-	}
-	50%{
-		transform: translate(0,50%);
-	}
-	100%{
-		transform: translate(0,0);
-	}
-}*/
 @keyframes rotate-animation{
 	0%{
 		-ms-transform:scale(3,3);
@@ -119,5 +136,56 @@
 		-ms-transform:scale(1,1);
 		-webkit-transform:scale(1,1);
 		transform: scale(1,1);
+	}
+}
+@-webkit-keyframes rotate-animation{
+	0%{
+		-ms-transform:scale(3,3);
+		-webkit-transform:scale(3,3);
+		transform: scale(3,3);
+	}
+	50%{
+		-ms-transform:scale(.5,.5);
+		-webkit-transform:scale(.5,.5);
+		transform: scale(.5,.5);
+	}
+	100%{
+		-ms-transform:scale(1,1);
+		-webkit-transform:scale(1,1);
+		transform: scale(1,1);
+	}
+}
+@keyframes music-animation{
+	0%{
+		-ms-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50%{
+		-ms-transform:rotate(180deg);
+		-webkit-transform:rotate(180deg);
+		transform: rotate(180deg);
+	}
+	100%{
+		-ms-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes music-animation{
+	0%{
+		-ms-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50%{
+		-ms-transform:rotate(180deg);
+		-webkit-transform:rotate(180deg);
+		transform: rotate(180deg);
+	}
+	100%{
+		-ms-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		transform: rotate(360deg);
 	}
 }

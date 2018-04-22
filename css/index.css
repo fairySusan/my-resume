@@ -143,7 +143,19 @@ table {
     width: 100%;
     margin: 0;
 }
-
+.icon-wrap{
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    top: 4rem;
+    z-index: 100000;
+    right:4rem;
+    animation: music-animation 3s infinite linear;
+}
+.icon-wrap>img{
+    border-radius: 50%;
+    border:6px solid rgba(220,220,220,.5);
+}
 #home{
 	background:url(../img/bg-index.jpg) 0 0 repeat;
 	color: white;
@@ -302,9 +314,22 @@ nav.navbar-default{
      #page-three{
 	 	background-position: 50% 0;
 	 }
+     .cover{
+        overflow: auto;
+     }
 	 #text-wrap>.motto{
 	 	font-size: 1.2rem;
 	 }
+     .icon-wrap{
+        width: 3rem;
+        height: 3rem;
+        top: 2.5rem;
+        right: 1rem;
+     }
+     .icon-wrap>img{
+        border-radius: 50%;
+        border:3px solid rgba(220,220,220,.5);
+    }
 /*-----------手机第二屏--------------------------------*/ 
     #title-wrap>p{
         width: 80%;
@@ -312,6 +337,14 @@ nav.navbar-default{
     }
      #title-wrap>h1{
         font-size: 1.5rem;
+     }
+     #title-wrap>.line{
+        margin: 1rem auto;
+     }
+     #pageOne-wrap,
+     #pageTwo-wrap,
+     #pageThree-wrap{
+        padding: 15% 0;
      }
     .intro-wrap{
         padding: 2rem 0;

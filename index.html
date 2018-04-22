@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" type="text/css" href="../css/icon.css">
-    <link rel="stylesheet" type="text/css" href="../css/animation.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/icon.css">
+    <link rel="stylesheet" type="text/css" href="./css/animation.css">
 </head>
 <body>
     <div id="container">
@@ -29,20 +29,23 @@
                 </div>
                 <div class="collapse navbar-collapse fr" id="example-navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li id="home-btn" class="active" onclick="slidePage(0)"><a href="#">Home</a></li>
-                        <li id="PageOne-btn"  onclick="slidePage(1)"><a href="#">PageOne</a></li>
-                        <li id="PageTwo-btn" onclick="slidePage(2)"><a href="#">PageTwo</a></li>
-                        <li id="PageThree-btn" onclick="slidePage(3)"><a href="#">PageThree</a></li>
-                        <li  onclick="slidePage(4)"><a href="#">PageFour</a></li>
-                        <li  onclick="slidePage(5)"><a href="#">PageFive</a></li>
+                        <li id="home-btn" class="active"><a href="#">Home</a></li>
+                        <li id="PageOne-btn"><a href="#">PageOne</a></li>
+                        <li id="PageTwo-btn"><a href="#">PageTwo</a></li>
+                        <li id="PageThree-btn"><a href="#">PageThree</a></li>
+                        <li ><a href="#">PageFour</a></li>
+                        <li ><a href="#">PageFive</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="icon-wrap">
+            <img id="music-icon" src="img/music-icon.jpg" width="100%" height="100%">
+        </div>
         <section id="home" class="cover">
             <div id="des-content" class="col-xs-12 col-sm-6">
                  <div class="poto">
-                    <img src="../img/poto1.jpg" alt="" width="20%" height="20%">
+                    <img src="./img/poto1.jpg" alt="" width="20%" height="20%">
                 </div>
                 <div id="text-wrap">
                     <p class="motto ellipsis">世上只有想不通的人，没有走不通的路。</p>
@@ -69,7 +72,7 @@
                 </div>
                 <div class="clearfix intro-wrap">
                     <div class="col-xs-6 col-sm-3" id="poto-wrap">
-                        <img src="../img/poto1.jpg" width="50%" height="50%">
+                        <img src="./img/poto1.jpg" width="50%" height="50%">
                     </div>
                     <ul class="col-xs-12 col-sm-3" id="left-text">
                         <li>姓名 | 陶芮</li>
@@ -255,11 +258,15 @@
         <section id="page-five">
         	
         </section>
+        <audio id="audio-tag" autoplay loop>
+            <source src="img/冯曦妤 - A Little Love.mp3" type="audio/mpeg">
+                Your browser does not support this audio format.
+            <embed height="50" width="100" src="img/冯曦妤 - A Little Love.mp3">
+        </audio>
     </div>
     </div>
 </body>
-<script src="../js/index.js"></script>
-<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../js/resume.js"></script>
+<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/resume.js"></script>
 </html>

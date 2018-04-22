@@ -33,7 +33,7 @@ function drawSkillCircle(value,average,myCanvas,text){
 	var canvasW = _this.width();
 	var canvasH = _this.height();
 	var ctx = myCanvas.getContext("2d");
-	ctx.clearRect(0,0,canvasW/2, canvasH/2);
+	ctx.clearRect(0,0,canvasW, canvasH);
 	ctx.beginPath();
 	ctx.moveTo(canvasW/2, canvasH/2);
 	ctx.arc(canvasW/2,canvasH/2,canvasW/2,0,2*Math.PI);
@@ -59,7 +59,7 @@ function drawSkillCircle(value,average,myCanvas,text){
 		ctx.arc(canvasW/2, canvasH/2, canvasH/2-5, -(Math.PI / 2), ((Math.PI * 2) * cur ) - Math.PI / 2, false);
 		ctx.stroke();
 
-		ctx.font = '16pt Arial';
+		ctx.font = '10pt Arial';
 		ctx.fillStyle = '#fff';
 		ctx.textAlign = 'center';
 		ctx.textAlignBaseline = 'middle';
@@ -157,26 +157,67 @@ $(document).ready(function(){
 			element.classList.remove(className);
 		});
 	}
-})
-function slidePage(flag){
-	var h = Window.innerHeight 
-				|| document.documentElement.clientHeight 
-				|| document.body.clientHeight;
+	$('#home-btn').click(function(){
 		$('.nav li').removeClass('active');
-		if (flag == 0) {
-			$('#wrap').animate({top:(0+'px')},1000);
-			$('#home-btn').toggleClass('active');
+		toPage(0);
+		$('#home-btn').toggleClass('active');
+	})
+	$('#PageOne-btn').click(function(){
+		$('.nav li').removeClass('active');
+		toPage(-h);
+		$('#PageOne-btn').toggleClass('active');
+	})
+	$('#PageTwo-btn').click(function(){
+		$('.nav li').removeClass('active');
+		toPage(-2*h);
+		$('#PageTwo-btn').toggleClass('active');
+	})
+	$('#PageThree-btn').click(function(){
+		$('.nav li').removeClass('active');
+		toPage(-3*h);
+		$('#PageThree-btn').toggleClass('active');
+	})
+	/*控制音乐的播放与暂停*/
+	var audioTag = document.getElementById('audio-tag');
+	var isPlaying = true;
+	$('.icon-wrap').click(function(){
+		if (isPlaying) {
+			audioTag.pause();
+			isPlaying=false;
+			$('.icon-wrap').css('animation-play-state','paused');
+			$('.icon-wrap').css('-webkit-animation-play-state','paused');
+		}else{
+			audioTag.play();
+			isPlaying=true;
+			$('.icon-wrap').css('animation-play-state','running');
+			$('.icon-wrap').css('-webkit-animation-play-state','running');
 		}
-		if (flag == 1) {
-			$('#wrap').animate({top:(-h+'px')},1000);
-			$('#PageOne-btn').toggleClass('active');
-		}
-		if (flag == 2) {
-			$('#wrap').animate({top:(-2*h+'px')},1000);
-			$('#PageTwo-btn').toggleClass('active');
-		}
-		if (flag == 3) {
-			$('#wrap').animate({top:(-3*h+'px')},1000);
-			$('#PageThree-btn').toggleClass('active');
-		}
+		
+	})
+	/*检测屏幕大小*/
+	var w=window.innerWidth
+	|| document.documentElement.clientWidth
+	|| document.body.clientWidth;
+	testScreen(w);
+	$(window).resize(function(){
+		setTimeout(function(){
+			w=window.innerWidth
+				|| document.documentElement.clientWidth
+				|| document.body.clientWidth;
+			testScreen(w);
+			},200);
+	})
+})
+function testScreen(w){
+	if (w<=768) {
+		console.log("resize");
+		$('canvas').attr('width',80);
+		$('canvas').attr('height',80);
 	}
+	if(w>768){
+		console.log("daping");
+		$('canvas').attr('width',120);
+		$('canvas').attr('height',120);
+	}
+	getCanvasId();
+}
