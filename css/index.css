@@ -310,6 +310,72 @@ nav.navbar-default{
 #skill-text>li{
     margin:4% 0;
 }
+.time-wrap{
+    width: 80%;
+    margin: 10% auto;
+    position: relative;
+}
+.time-line{
+    width:100%;
+    height: 4px;
+    background: #56cc9c; 
+}
+.time-dot{
+    width: 16px;
+    height:16px;
+    border:2px solid #a4e3ca;
+    border-radius: 50%;
+    background: #56cc9c;
+}
+.time-dot-bottom{
+    position: absolute;
+    top: -10px;
+}
+.time-dot-top{
+    position: absolute;
+    bottom: -10px;
+}
+.time-text-wrap{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrap-bottom{
+    position: absolute;
+}
+.wrap-top{
+    position: absolute;
+    bottom: 4px;
+}
+.triangle{
+    width: 0;
+    border-width:10px;
+    border-style: solid;
+}
+.triangle-bottom{
+    border-color:transparent transparent #fff  transparent ;
+}
+.triangle-top{
+    border-color:#fff transparent transparent   transparent ;
+}
+.time-text{
+    border: 2px solid #56cc9c;
+    border-radius: 3px;
+}
+#time-node1{
+    left: -10%;
+}
+#time-node2{
+    left: 3%;
+}
+#time-node3{
+    left: 12%;
+}
+#time-node4{
+    left: 18%;
+}
 @media only screen and (max-width: 768px){
 	 /* For mobile phones: */
 	 #home,
